@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perritos aleatorios</title>
+    <script src="https://kit.fontawesome.com/1f05addf06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/Css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+          <ul class="nav__link nav__link--menu">
+              <li class="nav__items">
+                  <a href="#inicio" class="nav__links">Inicio</a>
+              </li>
+              <li class="nav__items">
+                  <a href="#favoritos" class="nav__links">Favoritos</a>
+              </li>
+              <li class="nav__items">
+                  <a href="#subir" class="nav__links">Subir </a>
+              </li>
+              <li class="nav__items">
+                  <a href="#" class="nav__links">Blog</a>
+              </li>
+          </ul>
+      </nav>
+  </header>
+
+  <main>
+
+    <h1>Doggies App</h1>
+   
+   <span id="error"></span>
+
+   <section id="inicio" class="cards__container">
+     <article class="card">
+       <p class="card__title" id="title"></p>
+       <div class="card__img--container">
+         <img id="img1" class="card__img" alt="Foto perrito aleatorio" />
+         <button class="fav__button"><i class="fa-solid fa-heart"></i></button>
+       </div>
+       <div class="card__info">
+         <p class="weight" id="weight"></p>
+         <p class="height" id="height"></p>
+         <p class="life-span" id="lifeSpan"></p>
+       </div>
+     </article>
+     <article class="card">
+       <p class="card__title" id="title"></p>
+       <div class="card__img--container">
+         <img id="img1" class="card__img" alt="Foto perrito aleatorio" />
+         <button class="fav__button"><i class="fa-solid fa-heart"></i></button>
+       </div>
+       <div class="card__info">
+         <p class="weight" id="weight"></p>
+         <p class="height" id="height"></p>
+         <p class="life-span" id="lifeSpan"></p>
+       </div>
+     </article>
+     <article class="card">
+       <p class="card__title" id="title"></p>
+       <div class="card__img--container">
+         <img id="img1" class="card__img" alt="Foto perrito aleatorio" />
+         <button class="fav__button"><i class="fa-solid fa-heart"></i></button>
+       </div>
+       <div class="card__info">
+         <p class="weight" id="weight"></p>
+         <p class="height" id="height"></p>
+         <p class="life-span" id="lifeSpan"></p>
+       </div>
+     </article>
+   </section>
+
+   
+   <button id="moreDogs">¡Ver más perros!<i class="fa-solid fa-paw"></i></button>
+   
+   <section id="subir">
+     <article id="uploadingDog">
+       <h2>Sube la foto de tu perro</h2>
+       <form id="uploadingForm">
+         <label for="file" class="custom-file-upload">Selecciona la foto<i class="fa-solid fa-camera"></i></label>
+         <input id="file" type="file" name="file" onchange="previewImage()" />
+         <img id="preview" />
+         <button id="submitDog" type="button" onclick="uploadDogPhoto()">Subir foto de tu perro<i class="fa-solid fa-paper-plane"></i></button>
+       </form>
+     </article>
+
+   </section >
+
+
+   <section id="favoritos">
+     <h2>Favorite Doggies</h2>
+     <article id="favDogs" class="favDogs cards__container"></article>
+   </section>
+
+  </main>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./src/main.js"></script>
+  </body>
+</html>

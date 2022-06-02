@@ -1,0 +1,271 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    text-align: center;
+    background-color: #0d242ee6;
+    font-family: 'Montserrat', sans-serif;
+   
+  }
+  
+
+  
+  h1 {
+    display: flex;
+    margin: 25px 0;
+    color: #acdb34d0;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    
+    color: #f0f0f0;
+    margin: 0 0 20px 0;
+  }
+
+  .nav {
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__title {
+    font-weight: 300;
+  }
+
+  .nav__link {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+  }
+
+  .nav__items {
+    list-style: none;
+  }
+
+  .nav__links {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .nav__menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+  }
+
+  .nav__img {
+    display: block;
+    width: 30px;
+  }
+
+
+  .nav__close {
+    display: var(--show, none);
+  }
+
+  /* Hero container */
+
+  .hero__container {
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+  }
+
+  .hero__paragraph {
+    margin-bottom: 20px;
+  }
+
+  .cta {
+    display: inline-block;
+    background-color: #2091F9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+  }
+
+
+    
+  #error {
+    color: #eee;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .cards__container {
+    display: flex;
+    width: 1100px;
+    margin: 30px auto;
+  }
+  
+  .card {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    box-shadow: 0 40px 60px -6px black;
+    border-radius: 10px;
+  }
+  
+  .card__title {
+    font-size: 28px;
+    background-color: #96c624d0;
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    letter-spacing: 3px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card__img--container {
+    position: relative;
+  }
+  
+  .card__img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .fav__button,
+  .fav__buttonDelete {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #eee;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .fav__button i {
+    transition: 0.5s;
+    color: rgba(144, 46, 46, 0.8);
+    font-size: 20px;
+  }
+  
+  .fav__button:hover i {
+    color: #aedb34;
+  }
+  
+  .fav__buttonDelete i {
+    transition: 0.5s;
+    color: #dbd834ce;
+    font-size: 20px;
+  }
+  
+  .fav__buttonDelete:hover i {
+    color: #000;
+  }
+  
+  .favDogs {
+    flex-wrap: wrap;
+    width: 1100px;
+    gap: 30px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 0 50px;
+  }
+  
+  .favCard {
+    width: 30vh;
+    height: 30vh;
+    margin: 0 auto;
+    box-shadow: 0 40px 60px -6px black;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .favCard div img {
+    height: 30vh;
+    object-fit: cover;
+  }
+  
+  .card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 120px;
+  }
+  
+  #moreDogs,
+  #submitDog,
+  .custom-file-upload {
+    width: 260px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #44a624c3;
+    opacity: 0.6;
+    color: #fff;
+    transition: 0.5s;
+    margin: 30px 0;
+  }
+  
+  #moreDogs:hover,
+  .custom-file-upload:hover,
+  #submitDog:hover {
+    opacity: 1;
+  }
+  
+  #moreDogs i,
+  #submitDog i,
+  .custom-file-upload i {
+    margin-left: 12px;
+  }
+  
+  #submitDog,
+  .custom-file-upload {
+    margin: 0;
+  }
+  
+  .custom-file-upload {
+    border-radius: 20px 20px 0 0;
+    background-color: #f0f0f0;
+    color: #000;
+    line-height: 50px;
+  }
+  
+  #submitDog {
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 30px;
+  }
+  
+  #uploadingForm {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #file {
+    display: none;
+  }
+  
+  #preview {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    box-shadow: 0 40px 60px -6px black;
+  }
